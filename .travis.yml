@@ -1,0 +1,20 @@
+script: make -f makefile.unix
+
+install:
+  - cd src
+   
+language: cpp
+ 
+before_install:
+  - sudo apt-get install libssl-dev libdb-dev libdb++-dev  libminiupnpc-dev libminiupnpc8 libboost-all-dev build-essential -y
+
+branches:
+  only:
+    - master
+  
+notifications:
+  irc:
+    channels:
+      - "chat.freenode.net#opal-dev"
+    template:
+      - "%{repository}/%{branch} (%{commit} - %{author}): %{message}"
