@@ -17,6 +17,12 @@ Block Reward Schedule
 * MinStakeAge: 24 hours
 * Max: Unlimited
 
+##Acknowledgements
+
+This project uses code from the Opalcoin Project, and all code developed by the
+Opalcoin Project is liscensed under the 4-Clause BSD Liscense.  This project
+also uses code from the xxhash and lz4 projects.
+
 ##Troubleshooting
 
 In the event you encounter problems compiling the daemon, feel free to consult the guide below:
